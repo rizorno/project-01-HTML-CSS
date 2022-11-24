@@ -26,15 +26,40 @@ a {
 
   width: 100%;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
   }
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
   }
 
-  @media screen and (min-width: 1280px) {
-    width: 1280px;
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
   }
+}
+
+.section-title {
+  color: #000000;
+
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  margin-bottom: 40px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 24px;
+    line-height: 1.208;
+  }
+}
+
+.section-description {
+  color: $color-premier;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.714;
+
+  margin-bottom: 40px;
 }

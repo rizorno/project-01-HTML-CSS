@@ -22,32 +22,26 @@
   }
 }
 
-.features__title-name {
-  color: #000000;
+// .section-title--margin {
+//    margin-bottom: 40px;
+// }
 
-  font-size: 20px;
-  line-height: 1.2;
-  text-transform: uppercase;
+// .features__title-name {
+//   color: #000000;
 
-  margin-bottom: 40px;
+//   font-size: 20px;
+//   line-height: 1.2;
+//   text-transform: uppercase;
 
-  @media screen and (min-width: $tablet) {
-    font-size: 24px;
-    line-height: 1.208;
-  }
-}
+//   margin-bottom: 40px;
 
-.features__description {
-  color: #000000;
+//   @media screen and (min-width: $tablet) {
+//     font-size: 24px;
+//     line-height: 1.208;
+//   }
+// }
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.714;
-
-  margin-bottom: 40px;
-
-  position: relative;
-
+.section-description {
   @media screen and (min-width: $tablet) {
     font-weight: 500;
     line-height: 1.5;
