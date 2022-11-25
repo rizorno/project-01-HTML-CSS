@@ -1,0 +1,65 @@
+body {
+  color: #000000;
+  font-family: $font-family-premier;
+  font-size: 14px;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  width: 100%;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
+}
+
+.section-title {
+  color: #000000;
+
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  margin-bottom: 40px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 24px;
+    line-height: 1.208;
+  }
+}
+
+.section-description {
+  color: $color-premier;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.714;
+
+  margin-bottom: 40px;
+}

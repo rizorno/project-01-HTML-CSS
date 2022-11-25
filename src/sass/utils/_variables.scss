@@ -1,8 +1,30 @@
-:root {
-    --black-color: #000000;
-    --white-color: #FFFFFF;
-    --gradient: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
-    /* Font */
-    --basic-font-family: 'Inter', sans-serif;
-    --minor-font-family: 'Montserrat', sans-serif;
-}
+// Fonts
+
+$font-family-premier: Inter, sans-serif;
+$font-family-second: Montserrat, sans-serif;
+
+// Colors
+
+$background-light: #ffffff;
+$background-dark: #c4c4c4;
+
+$color-premier: #000000;
+$color-second: #ffffff;
+
+$hover-focus-button: transparent;
+
+// Gradients
+
+$gradient-header: linear-gradient(
+  90.03deg,
+  rgba(0, 197, 235, 0.3) -1.97%,
+  rgba(181, 68, 254, 0.3) 89.43%
+);
+
+$gradient-button: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+
+// Breakpoints
+
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1280px;
