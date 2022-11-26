@@ -20,6 +20,22 @@ a {
   text-decoration: none;
 }
 
+<<<<<<< Updated upstream
+=======
+button {
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: $color-premier;
+}
+
+>>>>>>> Stashed changes
 .container {
   margin: 0 auto;
   padding: 0 20px;
