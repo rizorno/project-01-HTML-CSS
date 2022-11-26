@@ -1,6 +1,6 @@
 .menu-container {
     display: flex;
-
+    padding: 16px 20px 16px 21px;
 
     @media screen and (min-width: 768px) {
         display: none;
@@ -21,7 +21,7 @@
 }
 
 .mobile-menu__item:not(:last-child) {
-    margin-bottom: 16px;
+    margin-bottom: 50px;
 }
 
 .mobile-menu__link {
@@ -62,7 +62,6 @@
     background-image: url(/src/images/header/gradient-mobile-menu.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 48px 40px;
 
     z-index: 999;
 
