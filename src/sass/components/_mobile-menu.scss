@@ -1,18 +1,10 @@
 .menu-container {
-<<<<<<< HEAD
   display: flex;
+  padding: 16px 20px 16px 21px;
 
   @media screen and (min-width: 768px) {
     display: none;
   }
-=======
-    display: flex;
-    padding: 16px 20px 16px 21px;
-
-    @media screen and (min-width: 768px) {
-        display: none;
-    }
->>>>>>> e61e6703410913873b059cde5e01849a6bea4496
 }
 
 .mobile-menu__list {
@@ -29,11 +21,7 @@
 }
 
 .mobile-menu__item:not(:last-child) {
-<<<<<<< HEAD
-  margin-bottom: 16px;
-=======
-    margin-bottom: 50px;
->>>>>>> e61e6703410913873b059cde5e01849a6bea4496
+  margin-bottom: 50px;
 }
 
 .mobile-menu__link {
@@ -63,30 +51,15 @@
 }
 
 .menu-container {
-<<<<<<< HEAD
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   background-color: #07081c;
-  background-image: url('/src/images/header/gradient-mobile-menu.svg');
+  background-image: url(/src/images/header/gradient-mobile-menu.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 16px;
-  padding-right: 20px;
-  padding-left: 21px;
-=======
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #07081C;
-    background-image: url(/src/images/header/gradient-mobile-menu.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
->>>>>>> e61e6703410913873b059cde5e01849a6bea4496
 
   z-index: 999;
 
