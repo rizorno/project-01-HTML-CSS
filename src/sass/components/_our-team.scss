@@ -1,8 +1,18 @@
 .team {
+	padding: 40px 0;
+
+	background-image: url('/src/images/team_images/mob-vector.svg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	padding: 40px 0;
+
+	@media screen and (min-width: 768px) {
+		background-image: url('/src/images/team_images/tab-vector.svg');
+	}
+
+	@media screen and (min-width: 1280px) {
+		background-image: url('/src/images/team_images/des-vector.svg');
+	}
 }
 
 
@@ -33,7 +43,7 @@
 	color: $color-premier;
 
 	@media screen and (min-width: 768px) {
-		margin: 40px 12px;
+		margin: 40px 0;
 		font-size: 16px;
 		line-height: 1.5;
 	}
@@ -50,10 +60,19 @@
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	gap: 24px;
+	row-gap: 24px;
 
-	@media screen and (min-width: 768px) and (max-width: 1280px) {
+	@media screen and (min-width: 768px) and (max-width: 1279px) {
 		padding-bottom: 35px;
+		row-gap: 40px;
+		column-gap: 32px;
+	}
+
+	@media screen and(min-width: 1280px) {
+		justify-content: space-between;
+		align-content: space-between;
+		row-gap: 32px;
+		row-gap: 0;
 	}
 
 
@@ -107,20 +126,21 @@
 			margin-top: 20px;
 		}
 	}
+
+	&__item--man {
+		background: linear-gradient(312.87deg, rgba(0, 197, 235, 0.5) -0.2%, rgba(181, 68, 254, 0.5) 112.66%), #06071B;
+		backdrop-filter: blur(17.5px);
+		border-radius: 15px;
+	}
+
+	&__item--woman {
+		background: linear-gradient(105.09deg, rgba(0, 197, 235, 0.5) -13.66%, rgba(181, 68, 254, 0.5) 104.34%), #06071B;
+		backdrop-filter: blur(17.5px);
+		border-radius: 15px;
+	}
 }
 
 .team-foto {
+	display: block;
 	border-radius: 12px;
-}
-
-.man {
-	background: linear-gradient(312.87deg, rgba(0, 197, 235, 0.5) -0.2%, rgba(181, 68, 254, 0.5) 112.66%), #06071B;
-	backdrop-filter: blur(17.5px);
-	border-radius: 15px;
-}
-
-.woman {
-	background: linear-gradient(105.09deg, rgba(0, 197, 235, 0.5) -13.66%, rgba(181, 68, 254, 0.5) 104.34%), #06071B;
-	backdrop-filter: blur(17.5px);
-	border-radius: 15px;
 }
