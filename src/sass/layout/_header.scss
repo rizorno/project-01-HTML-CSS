@@ -1,8 +1,21 @@
 .header {
+<<<<<<< HEAD
   position: absolute;
   width: 100%;
   top: 20px;
   background: $gradient-header;
+=======
+    position: absolute;
+    width: 100%;
+    top: 20px;
+    background: $gradient-header;
+    padding: 14px 0;
+
+    @media screen and (min-width: 768px) {
+        padding: 0;
+    }
+
+>>>>>>> e61e6703410913873b059cde5e01849a6bea4496
 }
 
 .header-container {
