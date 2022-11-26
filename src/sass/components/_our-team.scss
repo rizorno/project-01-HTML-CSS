@@ -10,15 +10,24 @@
 .section-title {
 	text-align: center;
 	margin-bottom: 24px;
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		margin: 0;
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 0px;
+	}
 }
 
 .section-description {
 	text-align: center;
 	color: $color-second;
+	margin: 0;
 }
 
 .section-description--column {
-	font-family: 'Inter';
+	font-family: 'Inter' sans-serif;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 14px;
@@ -28,7 +37,13 @@
 	color: $color-premier;
 
 	@media screen and (min-width: 768px) and (max-width: 1199px) {
-		margin: 40px 32px;
+		margin: 40px 12px;
+		font-size: 16px;
+		line-height: 1.5;
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin: 80px 198px;
 		font-size: 16px;
 		line-height: 1.5;
 	}
@@ -52,9 +67,22 @@
 		height: 413px;
 		left: 20px;
 		top: 2948px;
-		background: linear-gradient(312.87deg, rgba(0, 197, 235, 0.5) -0.2%, rgba(181, 68, 254, 0.5) 112.66%), #06071B;
-		backdrop-filter: blur(17.5px);
-		border-radius: 15px;
+
+		@media screen and (min-width: 768px) and (max-width: 1199px) {
+			padding: 20px 20px 12px 20px;
+			width: 336px;
+			height: 409px;
+			left: 400px;
+			top: 3034px;
+		}
+
+		@media screen and (min-width: 1200px) {
+			padding: 14px 12px 12px 12px;
+			width: 288px;
+			height: 364px;
+			left: 16px;
+			top: 2441px;
+		}
 
 
 		@media screen and (min-width: 768px) {
@@ -78,9 +106,25 @@
 		font-size: 18px;
 		line-height: 1.22;
 		color: $color-second;
+
+		@media screen and (min-width: 768px) {
+			margin-top: 20px;
+		}
 	}
 }
 
 .team-foto {
 	border-radius: 12px;
+}
+
+.man {
+	background: linear-gradient(312.87deg, rgba(0, 197, 235, 0.5) -0.2%, rgba(181, 68, 254, 0.5) 112.66%), #06071B;
+	backdrop-filter: blur(17.5px);
+	border-radius: 15px;
+}
+
+.woman {
+	background: linear-gradient(105.09deg, rgba(0, 197, 235, 0.5) -13.66%, rgba(181, 68, 254, 0.5) 104.34%), #06071B;
+	backdrop-filter: blur(17.5px);
+	border-radius: 15px;
 }
