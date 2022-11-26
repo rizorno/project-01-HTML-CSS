@@ -1,0 +1,12 @@
+.header {
+    position: absolute;
+    width: 100%;
+    top: 20px;
+    background: $gradient-header;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

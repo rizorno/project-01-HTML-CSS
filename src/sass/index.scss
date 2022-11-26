@@ -1,3 +1,14 @@
 @import './utils/variables';
 @import './utils/global';
-@import './features';
+@import './components/logo';
+@import './layout/header';
+@import './layout/features';
+@import './components/nav';
+@import './components/mobile-menu.scss';
+@import './components/button-burger-open.scss';
+@import './components/button-close-burger.scss';
+
+
+
+
+@import './layout/footer';

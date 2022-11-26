@@ -2,6 +2,7 @@ body {
   color: #000000;
   font-family: $font-family-premier;
   font-size: 14px;
+
 }
 
 *,
@@ -20,12 +21,6 @@ a {
   text-decoration: none;
 }
 
-<<<<<<< Updated upstream
-=======
-button {
-  cursor: pointer;
-}
-
 .list {
   list-style: none;
 }
@@ -35,7 +30,6 @@ button {
   color: $color-premier;
 }
 
->>>>>>> Stashed changes
 .container {
   margin: 0 auto;
   padding: 0 20px;
@@ -78,4 +72,9 @@ button {
   line-height: 1.714;
 
   margin-bottom: 40px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
