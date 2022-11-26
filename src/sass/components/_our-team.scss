@@ -1,17 +1,17 @@
 .team {
 	padding: 40px 0;
 
-	background-image: url('/src/images/team_images/mob-vector.svg');
+	background-image: url('/src/images/team/mob-vector.svg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 
 	@media screen and (min-width: 768px) {
-		background-image: url('/src/images/team_images/tab-vector.svg');
+		background-image: url('/src/images/team/tab-vector.svg');
 	}
 
 	@media screen and (min-width: 1280px) {
-		background-image: url('/src/images/team_images/des-vector.svg');
+		background-image: url('/src/images/team/des-vector.svg');
 	}
 }
 
