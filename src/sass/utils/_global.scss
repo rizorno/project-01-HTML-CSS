@@ -1,8 +1,7 @@
 body {
-  color: #000000;
+  color: $color-premier;
   font-family: $font-family-premier;
   font-size: 14px;
-
 }
 
 *,
@@ -21,8 +20,6 @@ a {
   text-decoration: none;
 }
 
-
-
 .container {
   margin: 0 auto;
   padding: 0 20px;
@@ -31,6 +28,8 @@ a {
 
   @media screen and (min-width: $mobile) {
     width: $mobile;
+    
+    padding: 0 32px;
   }
 
   @media screen and (min-width: $tablet) {
@@ -43,7 +42,7 @@ a {
 }
 
 .section-title {
-  color: #000000;
+  color: $color-premier;
 
   font-size: 20px;
   line-height: 1.2;
