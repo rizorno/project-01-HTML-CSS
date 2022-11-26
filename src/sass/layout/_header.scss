@@ -3,6 +3,12 @@
     width: 100%;
     top: 20px;
     background: $gradient-header;
+    padding: 14px 0;
+
+    @media screen and (min-width: 768px) {
+        padding: 0;
+    }
+
 }
 
 .header-container {
