@@ -4,7 +4,7 @@
 
   text-align: center;
 
-  background-image: url('/src/images/background-m-features.svg');
+  background-image: url('/src/images/features/background-m-features.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -15,7 +15,7 @@
     background-image: none;
 
     @media screen and (min-width: $desktop) {
-      background-image: url('/src/images/background-d-features.svg');
+      background-image: url('/src/images/features/background-d-features.svg');
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -115,7 +115,7 @@
     width: 100%;
     height: 406px;
 
-    background-image: url('/src/images/img-m-features.png');
+    background-image: url('/src/images/features/img-m-features.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -123,9 +123,9 @@
     margin-bottom: 40px;
 
     @media (min-device-pixel-ration: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('/src/images/img-m-features@2x.png');
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('/src/images/features/img-m-features@2x.png');
     }
 
     @media screen and (min-width: $tablet) {
@@ -136,12 +136,12 @@
       width: 368px;
       height: 592px;
       margin-bottom: 0;
-      background-image: url('/src/images/img-t-features.png');
+      background-image: url('/src/images/features/img-t-features.png');
 
       @media (min-device-pixel-ration: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url('/src/images/img-t-features@2x.png');
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url('/src/images/features/img-t-features@2x.png');
       }
     }
 
@@ -153,12 +153,12 @@
       width: 396px;
       height: 601px;
       margin-bottom: 0;
-      background-image: url('/src/images/img-d-features.png');
+      background-image: url('/src/images/features/img-d-features.png');
 
       @media (min-device-pixel-ration: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url('/src/images/img-d-features@2x.png');
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url('/src/images/features/img-d-features@2x.png');
       }
     }
   }
@@ -182,7 +182,7 @@
     height: 28px;
     margin-right: 12px;
     background-size: contain;
-    background-image: url('/src/images/icon-features.svg');
+    background-image: url('/src/images/features/icon-features.svg');
   }
 }
 
