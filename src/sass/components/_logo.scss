@@ -1,8 +1,11 @@
 .logo {
+  color: $color-second;
 
-    color: $color-second;
+  font-size: 28px;
+  line-height: 1.2142;
+  padding: 14px 0;
 
-    font-size: 28px;
-    line-height: 1.2142;
-    padding: 14px 0;
+  &-mobile {
+    padding: 0;
+  }
 }

@@ -11,7 +11,7 @@
 
   @media screen and (min-width: $tablet) {
     padding-top: 100px;
-    padding-bottom: 147px;
+    padding-bottom: 80px;
     background-image: none;
 
     @media screen and (min-width: $desktop) {
@@ -123,8 +123,8 @@
     margin-bottom: 40px;
 
     @media (min-device-pixel-ration: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url('/src/images/features/img-m-features@2x.png');
     }
 
@@ -139,8 +139,8 @@
       background-image: url('/src/images/features/img-t-features.png');
 
       @media (min-device-pixel-ration: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
         background-image: url('/src/images/features/img-t-features@2x.png');
       }
     }
@@ -156,8 +156,8 @@
       background-image: url('/src/images/features/img-d-features.png');
 
       @media (min-device-pixel-ration: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
         background-image: url('/src/images/features/img-d-features@2x.png');
       }
     }
