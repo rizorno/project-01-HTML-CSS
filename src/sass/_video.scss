@@ -1,105 +1,125 @@
 .video {
   text-align: center;
-}
-.video__conteiner {
-  position: relative;
-  margin: 0 auto;
-  padding: 40px 20px;
-  height: 629px;
-  background-color: #06071b;
-  // background-image: url(../images/video/bg-video-mobile.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-
-  width: 100%;
-
-  @media screen and (min-width: $mobile) {
-    width: $mobile;
-  }
-
-  @media screen and (min-width: $tablet) {
-    padding: 0 32px;
-    width: $tablet;
-  }
-
   @media screen and (min-width: $desktop) {
-    padding: 0 16px;
-    width: $desktop;
+    text-align: start;
+  }
+  &__conteiner {
+    position: relative;
+    margin: 0 auto;
+    padding: 40px 20px;
+    height: 629px;
+
+    background-image: url(../images/video/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+
+    @media screen and (min-width: $mobile) {
+      width: $mobile;
+    }
+
+    @media screen and (min-width: $tablet) {
+      background-image: url(../images/video/bg-tablet.png);
+      padding: 80px 32px 40px;
+      width: $tablet;
+    }
+
+    @media screen and (min-width: $desktop) {
+      background-image: url(../images/video/bg-dt.png);
+      padding: 60px 16px;
+      width: $desktop;
+      max-height: 402px;
+    }
+  }
+  &__title {
+    margin-bottom: 24px;
+    color: $color-second;
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 20px;
+    }
+  }
+  &__desc {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2142;
+    margin-bottom: 24px;
+    color: $color-second;
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+      line-height: 1.1875;
+    }
+    @media screen and (min-width: $desktop) {
+      max-width: 479px;
+      margin-bottom: 40px;
+    }
   }
 }
-.video-title {
-  text-align: center;
-  margin-bottom: 24px;
-  color: #ffffff;
+@media (min-device-pixel-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
+  .video__conteiner {
+    background-image: url(../images/video/bg-mobile@2x.png);
+  }
 }
-.video__desc {
-  font-family: 'Inter';
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  margin-bottom: 24px;
-
-  color: #ffffff;
+@media (min-device-pixel-ratio: 2) and (min-width: $tablet),
+  (min-resolution: 192dpi) and (min-width: $tablet),
+  (min-resolution: 2dppx) and (min-width: $tablet) {
+  .video__conteiner {
+    background-image: url(../images/video/bg-tablet@2x.png);
+  }
 }
+@media (min-device-pixel-ratio: 2) and (min-width: $desktop),
+  (min-resolution: 192dpi) and (min-width: $desktop),
+  (min-resolution: 2dppx) and (min-width: $desktop) {
+  .video__conteiner {
+    background-image: url(../images/video/bg-dt@2x.png);
+  }
+}
+
 .entypo-social {
   display: flex;
   justify-content: center;
   margin-bottom: 28px;
   gap: 20px;
+  @media screen and (min-width: $desktop) {
+    justify-content: left;
+  }
   &__link {
     display: flex;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    fill: white;
+    fill: $color-second;
 
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
-    // transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background: $gradient-button;
+
     cursor: pointer;
-    // &:hover {
-    //   fill: #06071b;
-    //   background: #06071b;
-    //   border: 1px solid
-    //     linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
-    //   outline: transparent;
-    // }
-    // &:focus {
-    //   fill: #06071b;
-    //   background: #06071b;
-    //   border: 1px solid #00c5eb;
-    //   outline: transparent;
-    // }
   }
 }
-// .icon {
-//   border: 1px solid #00c5eb;
-// }
-// .video-images {
-//   position: relative;
-//   width: 100%;
-//   height: 100%;
-// }
+
 .video__image {
   position: absolute;
   z-index: 2;
-  // top: 0;
-  left: 50%;
-  bottom: 40px;
-  width: 280px;
-  transform: translateX(-50%);
-}
-.video__image--spraying {
-  position: absolute;
-  z-index: 1;
-  // top: 0;
-  left: 50%;
   bottom: -20px;
+  left: 0;
+  left: 50%;
   width: 100%;
-  max-height: 350px;
-  transform: translateX(-50%);
+  height: auto;
+  transform: translate(-50%, -7%);
+  @media screen and (min-width: $tablet) {
+    width: 600px;
+    height: auto;
+  }
+  @media screen and (min-width: $desktop) {
+    left: 100%;
+    right: 0;
+    width: 680px;
+    height: auto;
+    transform: translate(-105%, -2%);
+  }
 }
