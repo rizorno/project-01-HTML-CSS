@@ -182,7 +182,13 @@
     height: 28px;
     margin-right: 12px;
     background-size: contain;
-    background-image: url('/src/images/features/icon-features.svg');
+    background-image: url('/src/images/features/icon-features.png');
+
+    @media (min-device-pixel-ration: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/src/images/features/icon-features@2x.png');
+    }
   }
 }
 
