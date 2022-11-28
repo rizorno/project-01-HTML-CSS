@@ -1,5 +1,6 @@
 .video {
   text-align: center;
+  background-color: #06071b;
   @media screen and (min-width: $desktop) {
     text-align: start;
   }
@@ -79,6 +80,7 @@
 }
 
 .entypo-social {
+  // position: relative;
   display: flex;
   justify-content: center;
   margin-bottom: 28px;
@@ -87,6 +89,7 @@
     justify-content: left;
   }
   &__link {
+    position: relative;
     display: flex;
     display: inline-flex;
     align-items: center;
@@ -100,8 +103,28 @@
 
     cursor: pointer;
   }
+  &__link:before {
+    position: absolute;
+    z-index: 1;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    border-radius: 50%;
+    background: #06071b;
+    opacity: 0;
+  }
+  &__link:hover:before {
+    opacity: 1;
+  }
 }
-
+.entypo-social__icon {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+}
 .video__image {
   position: absolute;
   z-index: 1;
