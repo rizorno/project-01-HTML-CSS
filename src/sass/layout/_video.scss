@@ -90,6 +90,29 @@
 
     cursor: pointer;
   }
+
+  &__link:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    border-radius: 50%;
+    background: #06071b;
+    opacity: 0;
+  }
+  &__link:hover:before {
+    opacity: 1;
+  }
+
+  &__icon {
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+  }
 }
 
 // .video__image {
