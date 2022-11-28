@@ -1,12 +1,14 @@
 <section class="video">
-  <div class="conteiner video__conteiner">
+  <div class="container video__container">
     <h2 class="video__title">WATCH THE VIDEO</h2>
+
     <p class="video__description">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
       fringilla fringilla nisl congue congue. Maecenas nec condimentum libero,
       at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at,
       hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.
     </p>
+
     <ul class="entypo-social">
       <li class="entypo-social__item">
         <a
@@ -18,6 +20,7 @@
             <use href="/src/images/sprite.svg#icon-ios"></use></svg
         ></a>
       </li>
+
       <li class="entypo-social__item">
         <a
           class="entypo-social__link"
@@ -31,7 +34,16 @@
         </a>
       </li>
     </ul>
+
     <picture>
+      <!-- <source
+        srcset="
+          /src/images/video/phone-m.png    1x,
+          /src/images/video/phone-m@2x.png 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <source -->
       <source
         srcset="
           /src/images/video/iphone-vid-mobile.png    1x,
@@ -55,7 +67,7 @@
       />
       <img
         class="video__image"
-        src="/src/images/video/iphone-vid-mobile.png"
+        src="/src/images/video/phone-m.png"
         alt="iphone"
       />
     </picture>

@@ -57,6 +57,7 @@
 
   &__description {
     color: $color-premier;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.714;
@@ -68,11 +69,13 @@
       line-height: 1.5;
     }
 
-    max-width: 886px;
+    @media screen and (min-width: $desktop) {
+      max-width: 886px;
 
-    margin-bottom: 141px;
-    margin-left: auto;
-    margin-right: auto;
+      margin-bottom: 80px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__list {
