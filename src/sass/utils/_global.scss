@@ -1,7 +1,7 @@
 body {
-	color: $color-premier;
-	font-family: $font-family-premier;
-	font-size: 14px;
+ color: $color-premier;
+ font-family: $font-family-premier;
+ font-size: 14px;
 }
 
 *,
@@ -26,9 +26,11 @@ a {
 
 	width: 100%;
 
-	@media screen and (min-width: $mobile) {
-		width: $mobile;
-	}
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+
+    padding: 0 32px;
+  }
 
 	@media screen and (min-width: $tablet) {
 		padding: 0 32px;
@@ -41,7 +43,7 @@ a {
 }
 
 .section-title {
-	color: $color-premier;
+  color: $color-premier;
 
 	font-size: 20px;
 	line-height: 1.2;
