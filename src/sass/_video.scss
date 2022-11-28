@@ -8,7 +8,6 @@
     position: relative;
     margin: 0 auto;
     padding: 40px 20px;
-    height: 629px;
 
     background-image: url(../images/video/bg-mobile-1.jpg);
     background-repeat: no-repeat;
@@ -31,13 +30,20 @@
       background-image: url(../images/video/bg-dt-1.jpg);
       padding: 60px 16px;
       width: $desktop;
-      max-height: 402px;
     }
   }
   &__title {
+    font-family: #ffffff;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
     margin-bottom: 24px;
     color: $color-second;
-    @media screen and (min-width: $desktop) {
+
+    @media screen and (min-width: $tablet) {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.2083;
       margin-bottom: 20px;
     }
   }
@@ -50,6 +56,7 @@
     @media screen and (min-width: $tablet) {
       font-size: 16px;
       line-height: 1.1875;
+      margin-bottom: 20px;
     }
     @media screen and (min-width: $desktop) {
       max-width: 479px;
@@ -80,13 +87,16 @@
 }
 
 .entypo-social {
-  // position: relative;
   display: flex;
   justify-content: center;
-  margin-bottom: 28px;
+  margin-bottom: 298px;
   gap: 20px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 298px;
+  }
   @media screen and (min-width: $desktop) {
     justify-content: left;
+    margin-bottom: 38px;
   }
   &__link {
     position: relative;
@@ -137,7 +147,7 @@
   @media screen and (min-width: $tablet) {
     width: 400px;
     height: auto;
-    transform: translate(-50%, -5%);
+    transform: translate(-50%);
   }
   @media screen and (min-width: $desktop) {
     left: 90%;
