@@ -1,6 +1,36 @@
 body {
-  color: #ffffff;
-  font-family: Inter;
+  // background: #06071b;
+  color: var(--primary-text-color);
+  font-family: 'Inter', sans-serif;
+}
+img {
+  display: block;
+  // max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
 }
 .container {
   margin-left: 0 auto;
@@ -53,10 +83,12 @@ body {
   @media screen and (min-width: 767px) {
     background-image: url(/src/images/tabletbackground.jpg);
     mix-width: 767px;
+    flex-direction: column;
   }
 
   @media screen and (min-width: 1280px) {
     background-image: url(/src/images/herobackground.jpg);
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 1279px) {
@@ -162,6 +194,28 @@ body {
   background-repeat: no-repeat;
   padding-left: 17px;
 }
+
+.hero__wrapper {
+  margin-top: 20px;
+  margin-left: 60px;
+  margin-right: 60px;
+  background-image: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  border-radius: 5px;
+  background-clip: padding-box;
+  padding: 1px;
+  width: 198px;
+  align-self: center;
+  display: inline-flex;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 0px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 0px;
+    align-self: flex-start;
+  }
+}
 .hero__button {
   height: 42px;
   background: transparent;
@@ -178,27 +232,6 @@ body {
 .hero__button:hover,
 .hero__button:focus {
   background: #06071b;
-}
-
-.hero__wrapper {
-  margin-top: 20px;
-  margin-left: 60px;
-  margin-right: 60px;
-  display: inline-flex;
-  justify-content: center;
-  background-image: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
-  border-radius: 5px;
-  background-clip: padding-box;
-  padding: 1px;
-  width: 198px;
-  align-self: center;
-  @media screen and (min-width: 768px) {
-    margin-left: 0px;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-left: 0px;
-    align-self: flex-start;
-  }
 }
 
 .hero-images {
