@@ -1,5 +1,5 @@
 body {
-	color: #000000;
+	color: $color-premier;
 	font-family: $font-family-premier;
 	font-size: 14px;
 }
@@ -41,7 +41,7 @@ a {
 }
 
 .section-title {
-	color: #000000;
+	color: $color-premier;
 
 	font-size: 20px;
 	line-height: 1.2;
@@ -57,7 +57,6 @@ a {
 
 .section-description {
 	color: $color-premier;
-
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.714;
