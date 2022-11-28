@@ -35,52 +35,74 @@
       padding-left: 157px;
     }
   }
-}
 
-.section-title {
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 80px;
+  &__title {
+    color: $color-premier;
+
+    font-size: 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 24px;
+      line-height: 1.208;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 80px;
+    }
   }
-}
 
-.section-description {
-  @media screen and (min-width: $tablet) {
+  &__description {
+    color: $color-premier;
     font-weight: 500;
-    line-height: 1.5;
-  }
+    font-size: 14px;
+    line-height: 1.714;
 
-  @media screen and (min-width: $desktop) {
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    max-width: 886px;
+
     margin-bottom: 141px;
-  }
-}
-
-.features__list {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  gap: 24px;
-
-  @media screen and (min-width: $tablet) {
-    position: relative;
-    justify-content: flex-start;
-    row-gap: 80px;
-    column-gap: 90px;
-
-    height: 760px;
-
-    padding-right: 58px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  @media screen and (min-width: $desktop) {
-    position: relative;
-    justify-content: space-between;
-    align-content: space-between;
-    row-gap: 80px;
-    column-gap: 492px;
+  &__list {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    gap: 24px;
 
-    height: 487px;
+    @media screen and (min-width: $tablet) {
+      position: relative;
+      justify-content: flex-start;
+      row-gap: 80px;
+      column-gap: 90px;
 
-    padding-right: 0;
+      height: 760px;
+
+      padding-right: 58px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      position: relative;
+      justify-content: space-between;
+      align-content: space-between;
+      row-gap: 80px;
+      column-gap: 492px;
+
+      height: 487px;
+
+      padding-right: 0;
+    }
   }
 }
 
@@ -164,7 +186,7 @@
   }
 }
 
-.features__title {
+.features__list-title {
   color: $color-premier;
 
   line-height: 1.5;

@@ -1,3 +1,5 @@
+@import '/node_modules/modern-normalize/modern-normalize.css';
+@import '/node_modules/swiper/swiper-bundle.css';
 @import './utils/variables';
 @import './utils/global';
 @import './components/logo';
@@ -7,6 +9,6 @@
 @import './components/button-burger-open';
 @import './components/button-close-burger';
 @import './layout/features';
-@import './components/team';
+@import './layout/team';
 
 @import './layout/footer';
