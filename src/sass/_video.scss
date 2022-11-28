@@ -9,7 +9,7 @@
     padding: 40px 20px;
     height: 629px;
 
-    background-image: url(../images/video/bg-mobile.png);
+    background-image: url(../images/video/bg-mobile-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -21,13 +21,13 @@
     }
 
     @media screen and (min-width: $tablet) {
-      background-image: url(../images/video/bg-tablet.png);
+      background-image: url(../images/video/bg-tablet-1.jpg);
       padding: 80px 32px 40px;
       width: $tablet;
     }
 
     @media screen and (min-width: $desktop) {
-      background-image: url(../images/video/bg-dt.png);
+      background-image: url(../images/video/bg-dt-1.jpg);
       padding: 60px 16px;
       width: $desktop;
       max-height: 402px;
@@ -60,21 +60,21 @@
   (min-resolution: 192dpi) and (max-width: 767px),
   (min-resolution: 2dppx) and (max-width: 767px) {
   .video__conteiner {
-    background-image: url(../images/video/bg-mobile@2x.png);
+    background-image: url(../images/video/bg-mobile-1@2x.jpg);
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: $tablet),
   (min-resolution: 192dpi) and (min-width: $tablet),
   (min-resolution: 2dppx) and (min-width: $tablet) {
   .video__conteiner {
-    background-image: url(../images/video/bg-tablet@2x.png);
+    background-image: url(../images/video/bg-tablet-1@2x.jpg);
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: $desktop),
   (min-resolution: 192dpi) and (min-width: $desktop),
   (min-resolution: 2dppx) and (min-width: $desktop) {
   .video__conteiner {
-    background-image: url(../images/video/bg-dt@2x.png);
+    background-image: url(../images/video/bg-dt-1@2x.jpg);
   }
 }
 
@@ -104,22 +104,22 @@
 
 .video__image {
   position: absolute;
-  z-index: 2;
-  bottom: -20px;
+  z-index: 1;
+  bottom: 50px;
   left: 0;
   left: 50%;
-  width: 100%;
-  height: auto;
-  transform: translate(-50%, -7%);
+  max-width: 100%;
+
+  transform: translate(-50%, -30%);
   @media screen and (min-width: $tablet) {
-    width: 600px;
+    width: 400px;
     height: auto;
+    transform: translate(-50%, -5%);
   }
   @media screen and (min-width: $desktop) {
-    left: 100%;
-    right: 0;
-    width: 680px;
+    left: 90%;
+    width: 501px;
     height: auto;
-    transform: translate(-105%, -2%);
+    transform: translate(-100%, -10%);
   }
 }
