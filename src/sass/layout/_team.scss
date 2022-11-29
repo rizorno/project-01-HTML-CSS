@@ -23,19 +23,12 @@
 
   text-align: center;
 
-  //   background-image: url('/src/images/team/mob-vector.svg');
-  //   background-repeat: no-repeat;
-  //   background-position: center;
-  //   background-size: cover;
-
   @media screen and (min-width: $tablet) {
     padding-top: 80px;
-    //  background-image: url('/src/images/team/tab-vector.svg');
   }
 
   @media screen and (min-width: $desktop) {
     padding-top: 80px;
-    //  background-image: url('/src/images/team/des-vector.svg');
   }
 
   &__title {
