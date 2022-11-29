@@ -1,0 +1,94 @@
+.testimonials {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  text-align: center;
+
+  background-image: url('/src/images/slide/background-m-customers.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 80px;
+    padding-bottom: 60px;
+
+    background-image: url('/src/images/slide/background-t-customers.svg');
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 80px;
+
+    background-image: url('/src/images/slide/background-d-customers.svg');
+  }
+
+  &__img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+  &__name {
+    font-size: 18px;
+    line-height: 1.222;
+
+    margin-bottom: 12px;
+  }
+
+  &__company {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.714;
+
+    margin-bottom: 24px;
+  }
+
+  &__testimonial {
+    color: $color-premier;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.714;
+
+    @media screen and (min-width: $tablet) {
+      line-height: 1.5;
+    }
+  }
+
+  .swiper-custom-pagination .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    padding: 0;
+    border-radius: 50%;
+    margin-top: 40px;
+  }
+
+  .swiper-custom-pagination .swiper-pagination-bullet-active {
+    background-color: $background-dark;
+  }
+}
+
+.section-title--width {
+  max-width: 179px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 100%;
+
+    font-size: 24px;
+    line-height: 1.208;
+  }
+}
+
+.swiper {
+  max-width: $mobile;
+  height: auto;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 704px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 886px;
+  }
+}
