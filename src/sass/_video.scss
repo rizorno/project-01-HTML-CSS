@@ -1,6 +1,6 @@
 .video {
   text-align: center;
-  background-color: #06071b;
+  // background-color: #06071b;
   @media screen and (min-width: $desktop) {
     text-align: start;
   }
@@ -27,6 +27,9 @@
     }
 
     @media screen and (min-width: $desktop) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       background-image: url(../images/video/bg-dt-1.jpg);
       padding: 60px 16px;
       width: $desktop;
@@ -89,10 +92,10 @@
 .entypo-social {
   display: flex;
   justify-content: center;
-  margin-bottom: 298px;
+  margin-bottom: 105px;
   gap: 20px;
   @media screen and (min-width: $tablet) {
-    margin-bottom: 298px;
+    margin-bottom: 85px;
   }
   @media screen and (min-width: $desktop) {
     justify-content: left;
@@ -136,23 +139,28 @@
   pointer-events: none;
 }
 .video__image {
-  position: absolute;
-  z-index: 1;
-  bottom: 50px;
-  left: 0;
-  left: 50%;
+  // position: absolute;
+  // z-index: 1;
+  // bottom: 50px;
+  // left: 0;
+  // left: 50%;
   max-width: 100%;
+  margin-bottom: 85px;
 
-  transform: translate(-50%, -30%);
+  // transform: translate(-50%, -30%);
   @media screen and (min-width: $tablet) {
-    width: 400px;
+    position: static;
+    margin-bottom: 0;
+    width: 401px;
     height: auto;
-    transform: translate(-50%);
+    transform: translate(0);
   }
   @media screen and (min-width: $desktop) {
-    left: 90%;
+    margin-right: 105px;
+    // left: 90%;
+
+    // top: 0;
     width: 501px;
     height: auto;
-    transform: translate(-100%, -10%);
   }
 }
