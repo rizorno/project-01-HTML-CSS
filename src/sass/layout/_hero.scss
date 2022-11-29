@@ -111,8 +111,6 @@
 }
 
 .btn-box-open {
-  position: relative;
-
   width: 200px;
   display: flex;
   align-items: center;
@@ -173,54 +171,19 @@
   height: auto;
 }
 
-.box-phone {
-  height: 490px;
-}
-
 .hero-images {
   position: absolute;
 
-  //   display: flex;
-  //   justify-content: flex-end;
+  display: inline-flex;
+  justify-content: flex-end;
   background-size: cover;
   top: 50%;
-  width: 100%;
+  max-width: 100%;
   height: 100%;
 }
 
 .hero-images__decor {
-  //   position: absolute;
-  //   max-width: 100%;
-  height: auto;
-  object-fit: cover;
-  text-align: right;
-
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-
-  @media screen and (min-width: $tablet) {
-    top: -50px;
-    left: 110px;
-  }
-
-  @media screen and (min-width: 869px) {
-    top: -70px;
-    left: 250px;
-  }
-  @media screen and (min-width: 1024px) {
-    top: -80px;
-    left: 270px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    top: -110px;
-    left: 300px;
-  }
-}
-
-.hero-images__telephone {
-  //   position: absolute;
+  position: absolute;
   display: block;
   max-width: 100%;
   height: auto;
@@ -231,27 +194,34 @@
   }
 
   @media screen and (min-width: $tablet) {
-    top: 0px;
-    left: 370px;
-  }
-
-  @media screen and (min-width: 869px) {
-    top: 00px;
-    left: 450px;
-  }
-
-  @media screen and (min-width: 879px) {
-    top: 00px;
-    left: 500px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    top: 0px;
-    left: 580px;
+    top: -67;
+    left: 167px;
   }
 
   @media screen and (min-width: $desktop) {
-    top: -80px;
+    top: -160px;
+    left: 337px;
+  }
+}
+
+.hero-images__telephone {
+  position: absolute;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+    top: -40px;
+    left: 368px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    top: -180px;
     left: 750px;
   }
 }
