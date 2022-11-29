@@ -1,21 +1,41 @@
-.team {
-  padding-top: 40px;
-
-  text-align: center;
-
-  background-image: url('/src/images/team/mob-vector.svg');
+.bg-double {
+  background-image: url('/src/images/team/double-m.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @media screen and (min-width: $tablet) {
+    background-image: url('/src/images/team/double-t.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  @media screen and (min-width: $desktop) {
+    background-image: url('/src/images/team/double-d.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.team {
+  padding-top: 40px;
+
+  text-align: center;
+
+  //   background-image: url('/src/images/team/mob-vector.svg');
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-size: cover;
+
+  @media screen and (min-width: $tablet) {
     padding-top: 80px;
-    background-image: url('/src/images/team/tab-vector.svg');
+    //  background-image: url('/src/images/team/tab-vector.svg');
   }
 
   @media screen and (min-width: $desktop) {
     padding-top: 80px;
-    background-image: url('/src/images/team/des-vector.svg');
+    //  background-image: url('/src/images/team/des-vector.svg');
   }
 
   &__title {
