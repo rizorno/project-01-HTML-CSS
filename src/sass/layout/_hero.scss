@@ -6,8 +6,6 @@
   background-image: url('/src/images/hero/mobilebgr.png');
   background-repeat: no-repeat;
   background-position: right top;
-  //   background-position-x: right;
-  //   //   background-position-y: 0;
 
   @media screen and (min-width: $tablet) {
     padding-top: 142px;
@@ -32,8 +30,6 @@
 
 .hero-container {
   position: relative;
-
-  //   align-self: flex-start;
 
   @media screen and (min-width: $tablet) {
     padding-left: 32px;
@@ -194,13 +190,13 @@
   }
 
   @media screen and (min-width: $tablet) {
-    top: -67;
-    left: 167px;
+    top: -80;
+    left: 120px;
   }
 
   @media screen and (min-width: $desktop) {
     top: -160px;
-    left: 337px;
+    left: 300px;
   }
 }
 
@@ -216,7 +212,7 @@
   }
 
   @media screen and (min-width: $tablet) {
-    top: -40px;
+    top: -30px;
     left: 368px;
   }
 
