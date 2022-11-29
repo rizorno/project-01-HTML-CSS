@@ -241,6 +241,24 @@
   color: #1ab9fd;
 }
 
+// .btn-box {
+//   position: relative;
+
+//   width: 232px;
+//   display: flex;
+//   align-items: center;
+
+//   margin-top: 20px;
+//   margin-left: auto;
+//   margin-right: auto;
+
+//   padding: 2px;
+
+//   background: $gradient-button;
+
+//   border-radius: 5px;
+// }
+
 .btn-box {
   position: relative;
 
@@ -251,10 +269,6 @@
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-
-  padding: 2px;
-
-  background: $gradient-button;
 
   border-radius: 5px;
 }
@@ -287,9 +301,44 @@
 
   &:hover,
   &:focus {
+    //  background: $gradient-button;
+    padding: 2px;
+
     background: $gradient-button;
   }
 }
+
+// .btn-download {
+//   width: 232px;
+//   height: 42px;
+
+//   color: $color-second;
+
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 1.188;
+//   align-items: center;
+
+//   cursor: pointer;
+
+//   margin-left: auto;
+//   margin-right: auto;
+
+//   border: transparent;
+
+//   background: $background-modal;
+
+//   border-radius: 5px;
+//   text-align: center;
+//   display: inline-flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   &:hover,
+//   &:focus {
+//     background: $gradient-button;
+//   }
+// }
 
 .hidden {
   position: absolute;
