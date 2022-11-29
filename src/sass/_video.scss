@@ -5,34 +5,36 @@
     text-align: start;
   }
   &__conteiner {
-    position: relative;
-    margin: 0 auto;
-    padding: 40px 20px;
-
-    background-image: url(../images/video/bg-mobile-1.jpg);
+    width: 100%;
+    background-image: url(../images/video/bg-mobile.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-
-    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+    position: relative;
+    min-height: 629px;
 
     @media screen and (min-width: $mobile) {
       width: $mobile;
     }
 
     @media screen and (min-width: $tablet) {
-      background-image: url(../images/video/bg-tablet-1.jpg);
+      background-image: url(../images/video/bg-tablet.jpg);
       padding: 80px 32px 40px;
       width: $tablet;
+      min-height: 629px;
     }
 
     @media screen and (min-width: $desktop) {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-image: url(../images/video/bg-dt-1.jpg);
-      padding: 60px 16px;
       width: $desktop;
+      min-height: 402px;
+      padding: 60px 16px;
+
+      background-image: url(../images/video/bg-dt.jpg);
     }
   }
   &__title {
@@ -71,31 +73,39 @@
   (min-resolution: 192dpi) and (max-width: 767px),
   (min-resolution: 2dppx) and (max-width: 767px) {
   .video__conteiner {
-    background-image: url(../images/video/bg-mobile-1@2x.jpg);
+    background-image: url(../images/video/bg-mobile@2x.jpg);
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: $tablet),
   (min-resolution: 192dpi) and (min-width: $tablet),
   (min-resolution: 2dppx) and (min-width: $tablet) {
   .video__conteiner {
-    background-image: url(../images/video/bg-tablet-1@2x.jpg);
+    background-image: url(../images/video/bg-tablet@2x.jpg);
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: $desktop),
   (min-resolution: 192dpi) and (min-width: $desktop),
   (min-resolution: 2dppx) and (min-width: $desktop) {
   .video__conteiner {
-    background-image: url(../images/video/bg-dt-1@2x.jpg);
+    background-image: url(../images/video/bg-dt.jpg);
   }
 }
-
+.conteiner.video--position {
+  padding: 0 20px;
+  font-weight: 200;
+  font-weight: 200;
+  font-weight: 200;
+  font-weight: 200;
+  font-weight: 200;
+  font-weight: 200;
+}
 .entypo-social {
   display: flex;
   justify-content: center;
-  margin-bottom: 105px;
+  margin-bottom: 40px;
   gap: 20px;
   @media screen and (min-width: $tablet) {
-    margin-bottom: 85px;
+    margin-bottom: 10px;
   }
   @media screen and (min-width: $desktop) {
     justify-content: left;
@@ -104,7 +114,7 @@
   &__link {
     position: relative;
     display: flex;
-    display: inline-flex;
+    // display: inline-flex;
     align-items: center;
     justify-content: center;
     fill: $color-second;
@@ -138,29 +148,90 @@
   z-index: 2;
   pointer-events: none;
 }
-.video__image {
-  // position: absolute;
-  // z-index: 1;
-  // bottom: 50px;
-  // left: 0;
-  // left: 50%;
-  max-width: 100%;
-  margin-bottom: 85px;
-
-  // transform: translate(-50%, -30%);
+.video__picture {
+  position: relative;
+  padding: 50px 0;
   @media screen and (min-width: $tablet) {
-    position: static;
-    margin-bottom: 0;
-    width: 401px;
-    height: auto;
-    transform: translate(0);
+    padding: 50px 0;
   }
   @media screen and (min-width: $desktop) {
-    margin-right: 105px;
-    // left: 90%;
+    padding: 0;
+  }
 
-    // top: 0;
-    width: 501px;
+  // position: relative;
+
+  &::before {
+    content: '';
+    width: 120%;
+    height: 120%;
+    z-index: 20;
+    background-image: url(../images/video/mob-blur.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-15%, 10%);
+    @media screen and (min-width: $tablet) {
+      content: '';
+      width: 100%;
+      height: 120%;
+      z-index: 20;
+      background-image: url(../images/video/blur-tablet.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 82% 106%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translate(0%, 13%);
+    }
+    @media screen and (min-width: $desktop) {
+      content: '';
+      content: '';
+      width: 140%;
+      height: 140%;
+      z-index: 20;
+      background-image: url(../images/video/blur-dt.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 90% 147%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translate(-26%, 10%);
+    }
+  }
+}
+.video__image {
+  width: 100%;
+  z-index: 30;
+  max-width: 100%;
+  width: 100%;
+  z-index: 30;
+  max-width: 100%;
+  height: auto;
+  padding: 0 20px;
+  display: block;
+  position: relative;
+
+  @media screen and (min-width: $tablet) {
+    z-index: 30;
     height: auto;
+    width: 401px;
+    padding: 0;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 10%);
+  }
+  @media screen and (min-width: $desktop) {
+    width: 501px;
+    height: 264px;
+    height: auto;
+    padding: 0;
+    transform: translate(-65%, -3%);
   }
 }
