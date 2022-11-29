@@ -1,13 +1,19 @@
+// img {
+//   display: block;
+//   // max-width: 100%;
+//   height: auto;
+// }
+
 .hero {
   padding-top: 182px;
   padding-bottom: 122px;
 
-  //   background-image: url('/src/images/hero/mobilebgr.png');
-  //   background-repeat: no-repeat;
-  //   background-position-x: right;
-  //   background-position-y: top -12px;
   background-color: $background-dark;
-  //   background-size: contain;
+  background-image: url('/src/images/hero/mobilebgr.png');
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: top -12px;
+  background-size: contain;
 
   //   background-image: url('/src/images/hero/mobilebgr.png');
   //   background-repeat: no-repeat;
