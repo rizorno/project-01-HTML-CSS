@@ -241,24 +241,6 @@
   color: #1ab9fd;
 }
 
-// .btn-box {
-//   position: relative;
-
-//   width: 232px;
-//   display: flex;
-//   align-items: center;
-
-//   margin-top: 20px;
-//   margin-left: auto;
-//   margin-right: auto;
-
-//   padding: 2px;
-
-//   background: $gradient-button;
-
-//   border-radius: 5px;
-// }
-
 .btn-box {
   position: relative;
 
@@ -269,8 +251,14 @@
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-
+  background: $gradient-button;
   border-radius: 5px;
+  padding: 2px;
+
+  &:hover,
+  &:focus {
+    padding: 2px;
+  }
 }
 
 .btn-download {
@@ -291,22 +279,39 @@
 
   border: transparent;
 
-  background: $background-modal;
-
   border-radius: 5px;
   text-align: center;
   display: inline-flex;
   justify-content: center;
   align-items: center;
 
+  background: $gradient-button;
+
   &:hover,
   &:focus {
-    //  background: $gradient-button;
-    padding: 2px;
-
-    background: $gradient-button;
+    background: $background-modal;
   }
 }
+
+// Revers Hover
+
+// .btn-box {
+//   position: relative;
+
+//   width: 232px;
+//   display: flex;
+//   align-items: center;
+
+//   margin-top: 20px;
+//   margin-left: auto;
+//   margin-right: auto;
+
+//   padding: 2px;
+
+//   background: $gradient-button;
+
+//   border-radius: 5px;
+// }
 
 // .btn-download {
 //   width: 232px;
