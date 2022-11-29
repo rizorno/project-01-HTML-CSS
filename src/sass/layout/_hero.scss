@@ -2,11 +2,17 @@
   padding-top: 182px;
   padding-bottom: 122px;
 
+  //   background-image: url('/src/images/hero/mobilebgr.png');
+  //   background-repeat: no-repeat;
+  //   background-position-x: right;
+  //   background-position-y: top -12px;
   background-color: $background-dark;
+  //   background-size: contain;
 
-  background-image: url('/src/images/hero/mobilebgr.png');
-  background-repeat: no-repeat;
-  background-position: right 12px;
+  //   background-image: url('/src/images/hero/mobilebgr.png');
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-size: contain;
 
   //   display: flex;
 
@@ -81,6 +87,9 @@
   position: relative;
 
   align-self: flex-start;
+
+  //   padding-top: 182px;
+  //   padding-bottom: 122px;
 
   @media screen and (min-width: $tablet) {
     padding-left: 32px;
