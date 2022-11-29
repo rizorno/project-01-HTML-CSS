@@ -1,0 +1,133 @@
+<section class="section section-contact">
+  <div class="container">
+    <h2 class="section-title section-contact--title">CONTACT US</h2>
+
+    <div class="contact-box">
+      <div class="contact-box__form">
+        <form class="form" action="#">
+          <div class="form__group-input" role="group">
+            <label class="form__label">
+              <input
+                class="form__input"
+                type="text"
+                name="userName"
+                placeholder="Name"
+                pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+                required
+              />
+            </label>
+          </div>
+          <div class="form__group-input" role="group">
+            <label class="form__label">
+              <input
+                class="form__input"
+                id="mail"
+                type="email"
+                name="mail"
+                placeholder="Email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                required
+              />
+            </label>
+          </div>
+          <div class="form__group-textarea" role="group">
+            <textarea
+              class="form__textarea"
+              name="comment"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <div class="form__group-button" role="group">
+            <button class="form__button" type="submit">SUBMIT</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="inform contact-box__inform">
+        <h3 class="inform__caption">Get in touch with us</h3>
+        <p class="inform__text">
+          Nunc urna est, tristique et varius at, pharetra nec enim. Quisque
+          rhoncus lacus fringilla nulla sollicitudin tristique.
+        </p>
+        <ul class="social inform__social">
+          <svg class="social__gradient">
+            <linearGradient
+              id="gradient"
+              x1="-0.796875"
+              y1="14.4443"
+              x2="35.7839"
+              y2="14.4619"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#00C5EB" />
+              <stop offset="1" stop-color="#B544FE" />
+            </linearGradient>
+          </svg>
+
+          <li class="social__item">
+            <a
+              href="#"
+              class="social__link"
+              aria-label="facebook"
+              rel="noopener noreferrar"
+              target="_blank"
+            >
+              <svg class="social__icon" width="20" heihgt="20">
+                <use
+                  xlink:href="./images/contacts/sprite.svg#icon-facebook"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a
+              href="#"
+              class="social__link"
+              aria-label="twitter"
+              rel="noopener noreferrar"
+              target="_blank"
+            >
+              <svg class="social__icon" width="20" heihgt="20">
+                <use
+                  xlink:href="./images/contacts/sprite.svg#icon-twitter"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a
+              href="#"
+              class="social__link"
+              aria-label="linkedin"
+              rel="noopener noreferrar"
+              target="_blank"
+            >
+              <svg class="social__icon" width="20" heihgt="21">
+                <use
+                  xlink:href="./images/contacts/sprite.svg#icon-linkedin"
+                ></use></svg
+            ></a>
+          </li>
+        </ul>
+        <address class="inform__address">
+          <ul class="address">
+            <li class="address__item">
+              <a
+                class="address__link address__link--tell"
+                href="tel:+xx-xxxx-xxxx-xx"
+                >+xx-xxxx-xxxx-xx</a
+              >
+            </li>
+            <li class="address__item">
+              <a
+                class="address__link address__link--mail"
+                href="mailto:goIteens@gmail.com"
+                >goIteens@gmail.com</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </div>
+  </div>
+</section>
