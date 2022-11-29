@@ -166,11 +166,22 @@
   }
 }
 
+.box-decor,
+.box-phone {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.box-phone {
+  height: 490px;
+}
+
 .hero-images {
   position: absolute;
 
-  display: flex;
-  justify-content: flex-end;
+  //   display: flex;
+  //   justify-content: flex-end;
   background-size: cover;
   top: 50%;
   width: 100%;
@@ -210,9 +221,9 @@
 
 .hero-images__telephone {
   //   position: absolute;
-  //   display: block;
+  display: block;
   max-width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
 
   @media screen and (max-width: 767px) {

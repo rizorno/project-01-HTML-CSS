@@ -21,64 +21,69 @@
         </button>
       </div>
       <div class="hero-images">
-        <picture class="hero-images__decor">
-          <source
-            srcset="
-              /src/images/hero/hero-decor-tablet.png    1x,
-              /src/images/hero/hero-decor-tablet@2x.png 2x
-            "
-            media="(min-width: 768px)"
-            data-speed="-3"
-            class="layer"
-          />
+        <div class="box-decor">
+          <picture class="hero-images__decor">
+            <source
+              srcset="
+                /src/images/hero/hero-decor-tablet.png    1x,
+                /src/images/hero/hero-decor-tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+              data-speed="-3"
+              class="layer"
+            />
 
-          <source
-            srcset="
-              /src/images/hero/hero-decor-dt.png    1x,
-              /src/images/hero/hero-decor-dt@2x.png 2x
-            "
-            media="(min-width: 1280px)"
-            data-speed="-3"
-            class="layer"
-          />
+            <source
+              srcset="
+                /src/images/hero/hero-decor-dt.png    1x,
+                /src/images/hero/hero-decor-dt@2x.png 2x
+              "
+              media="(min-width: 1280px)"
+              data-speed="-3"
+              class="layer"
+            />
 
-          <img
-            src="/src/images/hero/hero-decor-tablet.png"
-            alt="decor"
-            data-speed="-3"
-            class="layer"
-          />
-        </picture>
-        <picture class="hero-images__telephone">
-          <source
-            srcset="
-              /src/images/hero/hero-iphone-tablet.png    1x,
-              /src/images/hero/hero-iphone-tablet@2x.png 2x
-            "
-            media="(min-width: 768px)"
-            type="image/png"
-            data-speed="2"
-            class="layer"
-          />
+            <img
+              src="/src/images/hero/hero-decor-tablet.png"
+              alt="decor"
+              data-speed="-3"
+              class="layer"
+            />
+          </picture>
+        </div>
 
-          <source
-            srcset="
-              /src/images/hero/hero-iphone-dt.png    1x,
-              /src/images/hero/hero-iphone-dt@2x.png 2x
-            "
-            media="(min-width: 1280px)"
-            type="image/png"
-            data-speed="2"
-            class="layer"
-          />
+        <div class="box-phone">
+          <picture class="hero-images__telephone">
+            <source
+              srcset="
+                /src/images/hero/hero-iphone-tablet.png    1x,
+                /src/images/hero/hero-iphone-tablet@2x.png 2x
+              "
+              media="(max-width: 768px)"
+              type="image/png"
+              data-speed="2"
+              class="layer"
+            />
 
-          <img
-            src="/src/images/hero/hero-iphone-tablet.png"
-            alt="iphone"
-            data-speed="2"
-            class="layer"
-          />
-        </picture>
+            <source
+              srcset="
+                /src/images/hero/hero-iphone-dt.png    1x,
+                /src/images/hero/hero-iphone-dt@2x.png 2x
+              "
+              media="(min-width: 1280px)"
+              type="image/png"
+              data-speed="2"
+              class="layer"
+            />
+
+            <img
+              src="/src/images/hero/hero-iphone-tablet.png"
+              alt="iphone"
+              data-speed="2"
+              class="layer"
+            />
+          </picture>
+        </div>
       </div>
     </div>
   </div>
