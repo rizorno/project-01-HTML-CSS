@@ -107,20 +107,20 @@
   //   }
   &__list {
     display: inline-grid;
-    grid-template-rows: 1fr repeat(5, 1fr);
+    grid-template-rows: repeat(6, fr);
     grid-template-columns: 1fr;
     gap: 24px;
 
     @media screen and (min-width: $tablet) {
       position: relative;
-      // grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
 
       // .features__item {
       //   grid-column: span 2;
       // }
 
-      // row-gap: 80px;
-      // column-gap: 90px;
+      row-gap: 80px;
+      column-gap: 90px;
 
       // height: auto;
 
