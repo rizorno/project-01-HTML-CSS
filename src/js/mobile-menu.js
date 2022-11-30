@@ -2,6 +2,7 @@
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
+  const mobileList = document.querySelector('.js-menu-links');
 
   const toggleMenu = () => {
     const isMenuOpen =
@@ -9,12 +10,14 @@
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
 
-    const scrollLockMethod = !isMenuOpen
-      ? 'disableBodyScroll'
-      : 'enableBodyScroll';
-    bodyScrollLock[scrollLockMethod](document.body);
+    //  const scrollLockMethod = !isMenuOpen
+    //    ? 'disableBodyScroll'
+    //    : 'enableBodyScroll';
+    //  bodyScrollLock[scrollLockMethod](document.body);
   };
-
+  mobileList.addEventListener('click', function () {
+    mobileMenu.classList.remove('is-open');
+  });
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
 
@@ -23,6 +26,6 @@
     if (!e.matches) return;
     mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);
-    bodyScrollLock.enableBodyScroll(document.body);
+    //  bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
