@@ -95,6 +95,8 @@
 
   margin-bottom: 40px;
 
+  transition: opacity $transition;
+
   @media screen and (min-width: $desktop) {
     justify-content: left;
     margin-bottom: 0;

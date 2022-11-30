@@ -29,14 +29,14 @@
 }
 
 .mobile-menu__link--current {
-  background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  background: $gradient-button;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .nav__link--current {
-  background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  background: $gradient-button;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -44,7 +44,7 @@
 
 .mobile-menu__link:hover,
 .mobile-menu__link:focus {
-  background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  background: $gradient-button;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -56,7 +56,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #07081c;
+  background-color: $background-modal;
   background-image: url('/src/images/header/gradient-mobile-menu.svg');
   background-size: cover;
   background-repeat: no-repeat;

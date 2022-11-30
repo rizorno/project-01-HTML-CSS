@@ -138,7 +138,7 @@
         rgba(0, 197, 235, 0.5) -0.2%,
         rgba(181, 68, 254, 0.5) 112.66%
       ),
-      #06071b;
+      $background-dark;
     backdrop-filter: blur(17.5px);
     border-radius: 15px;
   }
@@ -149,7 +149,7 @@
         rgba(0, 197, 235, 0.5) -13.66%,
         rgba(181, 68, 254, 0.5) 104.34%
       ),
-      #06071b;
+      $background-dark;
     backdrop-filter: blur(17.5px);
     border-radius: 15px;
   }

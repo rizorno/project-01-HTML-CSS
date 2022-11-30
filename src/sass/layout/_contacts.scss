@@ -83,7 +83,7 @@
     align-items: center;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     flex-direction: row-reverse;
   }
 
@@ -95,7 +95,7 @@
     @media screen and (max-width: 1279px) {
       flex-direction: column;
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $desktop) {
       margin-left: 140px;
     }
   }
@@ -118,7 +118,8 @@
     &:not(:last-child) {
       margin-bottom: 20px;
     }
-    @media screen and (max-width: 480px) {
+
+    @media screen and (max-width: $mobile) {
       font-size: 20px;
       line-height: 1.2;
     }
@@ -127,13 +128,9 @@
       text-align: center;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       font-size: 24px;
       line-height: 1.2083;
-    }
-
-    @media screen and (min-width: 1280px) {
-      /*з початку*/
     }
   }
 
@@ -145,13 +142,8 @@
     &:not(:last-child) {
       margin-bottom: 40px;
     }
-    @media screen and (min-width: 1280px) {
-      &:not(:last-child) {
-        margin-bottom: 20px;
-      }
-    }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: $mobile) {
       line-height: 1.2142;
     }
 
@@ -159,7 +151,7 @@
       text-align: center;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       max-width: 500px;
       font-size: 16px;
       line-height: 1, 1875;
@@ -168,6 +160,12 @@
     @media screen and (max-width: 1279px) {
       text-align: center;
       margin: 0 auto;
+    }
+
+    @media screen and (min-width: $desktop) {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
     }
   }
 }
@@ -213,7 +211,7 @@
   &:not(:last-child) {
     margin-bottom: 40px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     &:not(:last-child) {
       margin-bottom: 20px;
     }
@@ -233,7 +231,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+    background: $gradient-button;
   }
 
   &__link {
@@ -249,28 +247,27 @@
     border-radius: 50%;
     color: $color-second;
 
-    background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+    background: $gradient-button;
 
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background $transition;
 
     &:hover,
     &:focus {
       background: $background-dark;
-      // border: 1px solid linear-gradient(90.03deg, #00C5EB 100%, #B544FE 100%);
     }
   }
+
   &__icon {
     display: block;
     fill: currentColor;
 
-    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      fill-opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      stroke-width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: stroke $transition, fill-opacity $transition,
+      stroke-width $transition;
 
     .social__link:hover &,
     .social__link:focus & {
       stroke-width: 1px;
-      // stroke: linear-gradient(90.03deg, #00C5EB 100%, #B544FE 100%);
+
       fill-opacity: 0;
       stroke: url(#gradient);
     }
@@ -286,7 +283,7 @@
   &__group-input {
     width: 100%;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       flex-basis: calc((100% - 32px) / 2);
     }
   }
@@ -318,11 +315,11 @@
       min-height: 220px;
     }
 
-    @media screen and (min-width: 76px) {
+    @media screen and (min-width: $tablet) {
       min-height: 162px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $desktop) {
       max-height: 162px;
     }
   }
@@ -350,11 +347,11 @@
       min-height: 220px;
     }
 
-    @media screen and (min-width: 76px) {
+    @media screen and (min-width: $tablet) {
       min-height: 162px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $desktop) {
       max-height: 162px;
     }
   }
@@ -364,11 +361,11 @@
       margin: 0 auto;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $desktop) {
       margin-left: auto;
     }
 
-    background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+    background: $gradient-button;
     border-radius: 5px;
     width: 181px;
     height: 42px;
@@ -384,14 +381,12 @@
     width: calc(100% - 2px);
     height: calc(100% - 2px);
 
-    //padding: 11px 59px;
-    //padding: calc(100% - 2px);
-    background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+    background: $gradient-button;
 
     border-radius: 5px;
     border: none;
     outline: none;
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background $transition;
 
     font-weight: 700;
     font-size: 16px;

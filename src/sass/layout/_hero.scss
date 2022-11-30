@@ -136,6 +136,8 @@
   border-radius: 5px;
   padding: 2px;
 
+  transition: padding $transition;
+
   &:hover,
   &:focus {
     padding: 2px;
@@ -171,6 +173,8 @@
   align-items: center;
 
   background: $gradient-button;
+
+  transition: background $transition;
 
   &:hover,
   &:focus {
