@@ -394,6 +394,8 @@
     text-align: center;
     color: $color-second;
 
+    cursor: pointer;
+
     &:hover,
     &:focus {
       background: $background-dark;
