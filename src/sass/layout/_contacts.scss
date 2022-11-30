@@ -10,37 +10,62 @@
 
   &--title {
     color: $color-second;
+
+    font-size: 20px;
+    line-height: 1.2;
     text-align: center;
+
+    margin-bottom: 40px;
   }
 
-  background-image: url('/src/images/contacts/bg-mobile-contact.jpg');
+  background-color: $background-dark;
+  background-image: url('/src/images/contacts/contacts-m.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
-  @media (min-device-pixel-ratio: 2) and (max-width: 767px),
-    (min-resolution: 192dpi) and (max-width: 767px),
-    (min-resolution: 2dppx) and (max-width: 767px) {
-    background-image: url('/src/images/contacts/bg-mobile-contact2x.jpg');
+  @media screen and (min-width: $tablet) {
+    background-image: url('/src/images/contacts/contacts-t.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    background-image: url('./src/images/contacts/bg-tablet-contact2x.jpg');
-  }
-  @media (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1279px),
-    (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1279px),
-    (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1279px) {
-    background-image: url('/src/images/contacts/bg-tablet-contact2x.jpg');
+  @media screen and (min-width: $desktop) {
+    background-image: url('/src/images/contacts/contacts-d.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
-  @media screen and (min-width: 1280px) {
-    background-image: url('/src/images/contacts/bg-desctop-contact.jpg');
-  }
-  @media (min-device-pixel-ratio: 2) and (min-width: 1280px),
-    (min-resolution: 192dpi) and (min-width: 1280px),
-    (min-resolution: 2dppx) and (min-width: 1280px) {
-    background-image: url('/src/images/contacts/bg-desctop-contact2x.jpg');
-  }
+  //   background-image: url('/src/images/contacts/bg-mobile-contact.jpg');
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   background-position: center;
+
+  //   @media (min-device-pixel-ratio: 2) and (max-width: 767px),
+  //     (min-resolution: 192dpi) and (max-width: 767px),
+  //     (min-resolution: 2dppx) and (max-width: 767px) {
+  //  background-image: url('/src/images/contacts/bg-mobile-contact2x.jpg');
+  //   }
+
+  //   @media screen and (min-width: 768px) and (max-width: 1279px) {
+  //  background-image: url('./src/images/contacts/bg-tablet-contact2x.jpg');
+  //   }
+  //   @media (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1279px),
+  //     (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1279px),
+  //     (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1279px) {
+  //  background-image: url('/src/images/contacts/bg-tablet-contact2x.jpg');
+  //   }
+
+  //   @media screen and (min-width: 1280px) {
+  //  background-image: url('/src/images/contacts/bg-desctop-contact.jpg');
+  //   }
+  //   @media (min-device-pixel-ratio: 2) and (min-width: 1280px),
+  //     (min-resolution: 192dpi) and (min-width: 1280px),
+  //     (min-resolution: 2dppx) and (min-width: 1280px) {
+  //  background-image: url('/src/images/contacts/bg-desctop-contact2x.jpg');
+  //   }
 }
 
 .contact-box {
@@ -162,6 +187,8 @@
     &--tell {
       font-size: 16px;
       line-height: 1.1875;
+
+      margin-bottom: 12px;
     }
 
     &--mail {
@@ -224,7 +251,7 @@
 
     &:hover,
     &:focus {
-      background: #06071b;
+      background: $background-dark;
       // border: 1px solid linear-gradient(90.03deg, #00C5EB 100%, #B544FE 100%);
     }
   }
@@ -370,7 +397,7 @@
 
     &:hover,
     &:focus {
-      background: #06071b;
+      background: $background-dark;
     }
   }
 }
