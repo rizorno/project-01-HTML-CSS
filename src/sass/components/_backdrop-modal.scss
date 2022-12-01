@@ -380,6 +380,12 @@
   transition: background $transition;
 }
 
+.plan-radio {
+  cursor: pointer;
+}
+
 .hidden:checked + .plan-radio {
   background: $gradient-button;
+
+  cursor: auto;
 }
