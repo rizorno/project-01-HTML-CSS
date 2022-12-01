@@ -133,7 +133,8 @@
     opacity: 0;
   }
 
-  &__link:hover:before {
+  &__link:hover:before,
+  &__link:focus:before {
     opacity: 1;
   }
 
