@@ -68,3 +68,25 @@
     </picture>
   </div>
 </section>
+
+<div data-modal class="backdrop-video is-hidden">
+  <div class="video-modal">
+    <button data-modal-close type="button" class="video__btn--close">
+      <svg width="16" height="16">
+        <use xlink:href="../src/images/sprite.svg#icon-close_40px"></use>
+      </svg>
+    </button>
+    <div class="video-modal__iframe">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/FT3ODSg1GFE"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+        gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</div>
+<script src="/src/js/modal.js"></script>
