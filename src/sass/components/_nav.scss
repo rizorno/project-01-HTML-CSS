@@ -17,4 +17,11 @@
 
   font-size: 12px;
   line-height: 1.25;
+
+  @media screen and (min-width: $tablet) {
+    &:hover, &focus {
+      color: $gradient-header;
+    }
+  }
+
 }
