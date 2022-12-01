@@ -1,11 +1,12 @@
 .video {
   text-align: center;
+  background-color: #06071b;
   @media screen and (min-width: $desktop) {
     text-align: start;
   }
   &__conteiner {
     width: 100%;
-    background-color: #06071b;
+
     background-image: url(../images/video/bg-mobile.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -152,17 +153,17 @@
 
   &::before {
     content: '';
-    width: 100%;
+    width: 120%;
     height: 120%;
     z-index: 2;
-    background-image: url(../images/video/mob-blur.svg);
+    background-image: url(../images/video/blur-tablet.svg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 105% 105%;
     position: absolute;
     bottom: 0;
     left: 0;
-    transform: translateY(10%);
+    transform: translate(-7%, 10%);
     animation: opacityAnim linear 4000ms infinite;
     @media screen and (min-width: $tablet) {
       width: 100%;
