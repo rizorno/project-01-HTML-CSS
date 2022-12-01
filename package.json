@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://YuliaMiha/team-project-HTML-CSS",
+  "homepage": "https://rizorno.github.io/project-01",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /team-project-HTML-CSS/"
+    "build": "parcel build src/*.html --public-url /project-HTML-CSS/"
   },
   "repository": {
     "type": "git",
