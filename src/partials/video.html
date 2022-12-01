@@ -33,14 +33,14 @@
         </li>
       </ul>
     </div>
-    <div class="video__picture">
-      <!-- <button type="button" class="video__button" data-modal-open="">
+    <div class="video__picture" data-modal-open>
+      <button type="button" class="video__button">
         <svg class="icon icon-play-alt" width="24" height="32">
           <use
             xlink:href="../src/images/video/symbol-defs.svg#icon-play-alt"
           ></use>
         </svg>
-      </button> -->
+      </button>
       <picture>
         <source
           srcset="
@@ -72,19 +72,25 @@
     </div>
   </div>
 </section>
-<!-- 
-<div class="video__modal is-hidden" data-modal="">
-    <div class="video__iframe">
-      <button data-modal-close="" type="button" class="video__btn--close">
-        <svg class="icon icon-x" width="32" height="32"><use xlink:href="../src/images/video/symbol-defs.svg#icon-x"></use></svg>
-      </button>
+
+<div data-modal class="backdrop is-hidden">
+  <div class="video-modal">
+    <button data-modal-close type="button" class="video__btn--close">
+      <svg class="icon icon-x" width="16" height="16">
+        <use xlink:href="../src/images/video/sprite.svg#icon-close_40px"></use>
+      </svg>
+    </button>
+    <div class="video-modal__iframe">
       <iframe
-        src="#"
-        rel="noopener noreferrer"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/FT3ODSg1GFE"
+        title="YouTube video player"
         frameborder="0"
-        allowfullscreen=""
-      >
-      </iframe>
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </div>
   </div>
-</button> -->
+</div>
+<script src="./js/modal.js"></script>
