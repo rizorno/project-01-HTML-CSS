@@ -17,6 +17,7 @@
             href="https://www.apple.com/ua/app-store/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="App Store"
             ><svg class="entypo-social__icon" width="32" height="35">
               <use href="/src/images/sprite.svg#icon-ios"></use></svg
           ></a>
@@ -28,6 +29,7 @@
             href="https://play.google.com/store/games?hl=ru&gl=US"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Google Play"
           >
             <svg class="entypo-social__icon" width="32" height="36">
               <use href="/src/images/sprite.svg#icon-android"></use>
@@ -39,7 +41,11 @@
 
     <div class="box-picture" data-video-open>
       <picture>
-        <button class="video-button" type="button">
+        <button
+          class="video-button"
+          type="button"
+          aria-label="Play the video demonstration"
+        >
           <svg class="video-icon-play" width="25" height="25">
             <use href="/src/images/sprite.svg#icon-play"></use>
           </svg>
@@ -79,7 +85,12 @@
 
 <div data-video class="backdrop-video is-hidden-video">
   <div class="video-modal">
-    <button data-video-close type="button" class="video__btn--close">
+    <button
+      data-video-close
+      type="button"
+      class="video__btn--close"
+      aria-label="Close the video demonstration"
+    >
       <svg width="16" height="16">
         <use xlink:href="/src/images/sprite.svg#icon-close_40px"></use>
       </svg>
