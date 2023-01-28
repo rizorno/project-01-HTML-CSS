@@ -22,6 +22,13 @@
   scale: 0;
 }
 
+.js-body-scroll {
+  touch-action: none;
+  -webkit-overflow-scrolling: none;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
 .btn-close {
   position: absolute;
   top: 20px;

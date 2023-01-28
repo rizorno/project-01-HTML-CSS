@@ -1,19 +1,40 @@
+const { backdrop, openModalBtn, closeModalBtn, modal } = {
+  backdrop: document.querySelector('.backdrop'),
+  openModalBtn: document.querySelector('[data-modal-open]'),
+  closeModalBtn: document.querySelector('[data-modal-close]'),
+  modal: document.querySelector('[data-modal]'),
+};
+
+openModalBtn.addEventListener('click', openModal);
+closeModalBtn.addEventListener('click', closeModal);
+
 function openModal() {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
-    modal: document.querySelector('[data-modal]'),
-  };
-
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
-
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-  }
+  modal.classList.toggle('is-hidden');
+  document.querySelector('body').classList.add('js-body-scroll');
+  backdrop.addEventListener('click', closeModalClick);
+  window.addEventListener('keydown', closeModalEsc);
 }
 
-openModal();
+function closeModal() {
+  modal.classList.toggle('is-hidden');
+  document.querySelector('body').classList.remove('js-body-scroll');
+  backdrop.removeEventListener('click', closeModal);
+  window.removeEventListener('keypress', closeModalEsc);
+}
+
+function closeModalClick(e) {
+  if (e.target !== backdrop) {
+    return;
+  }
+  closeModal();
+}
+
+function closeModalEsc(e) {
+  if (e.code === 'Escape') {
+    closeModal();
+  }
+  return;
+}
 
 //* ============= Solution #1 =============
 
