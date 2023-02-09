@@ -415,8 +415,11 @@
 
 .video__btn--close {
   position: absolute;
-  top: 10px;
-  right: 20px;
+  //   top: 10px;
+  //   right: 20px;
+
+  top: 0px;
+  right: 0px;
 
   z-index: index 10;
 
@@ -430,4 +433,11 @@
   border: none;
   transition: $transition;
   outline: transparent;
+}
+
+.js-body-scroll {
+  touch-action: none;
+  -webkit-overflow-scrolling: none;
+  overflow: hidden;
+  overscroll-behavior: none;
 }

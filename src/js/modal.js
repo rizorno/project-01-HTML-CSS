@@ -10,22 +10,23 @@ closeModalBtn.addEventListener('click', closeModal);
 
 function openModal() {
   modal.classList.toggle('is-hidden');
-  document.querySelector('body').classList.add('js-body-scroll');
+  document.querySelector('body').classList.toggle('js-body-scroll');
   backdrop.addEventListener('click', closeModalClick);
   window.addEventListener('keydown', closeModalEsc);
 }
 
 function closeModal() {
   modal.classList.toggle('is-hidden');
-  document.querySelector('body').classList.remove('js-body-scroll');
-  backdrop.removeEventListener('click', closeModal);
-  window.removeEventListener('keypress', closeModalEsc);
+  document.querySelector('body').classList.toggle('js-body-scroll');
+  backdrop.removeEventListener('click', closeModalClick);
+  window.removeEventListener('keydown', closeModalEsc);
 }
 
 function closeModalClick(e) {
   if (e.target !== backdrop) {
     return;
   }
+  console.log('M-BG-2');
   closeModal();
 }
 

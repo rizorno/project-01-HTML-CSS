@@ -327,6 +327,13 @@
   display: none;
 }
 
+.js-body-scroll {
+  touch-action: none;
+  -webkit-overflow-scrolling: none;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
 // Revers Hover
 
 // .btn-box {
